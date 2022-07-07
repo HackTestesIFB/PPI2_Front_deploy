@@ -5,7 +5,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.decorators import permission_required
 
 from rest_framework import viewsets , response, status, exceptions
-from rest_framework.decorators import api_view, render_classes
+from rest_framework.decorators import api_view, renderer_classes
 from rest_framework.renderers import JSONRenderer, BrowsableAPIRenderer
 from rest_framework.permissions import AllowAny
 
@@ -27,7 +27,7 @@ class PerfilViewSet(viewsets.ModelViewSet):
         return super().get_permissions()
 
 @api_view(['GET'])   
-@render_classes((JSONRenderer, BrowsableAPIRenderer))
+@renderer_classes((JSONRenderer, BrowsableAPIRenderer))
 def get_convites(request, *args, **kwargs):
 	perfil_logado = get_perfil_logado(request)
 	convites = Convite.objects.filter(convidado=perfil_logado)
