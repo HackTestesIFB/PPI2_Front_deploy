@@ -58,7 +58,7 @@ def aceitar(request, *args, **kwargs):
 	try:
 		convite = Convite.objects.filter(convidado=perfil_logado).get(id=kwargs['convite_id'])
 	except:
-		raise exceptions.NotFound('Não foi encontrado um convite com o informado')
+		raise exceptions.NotFound('Não foi encontrado um convite com o id informado')
 	convite.aceitar()
 	return response.Response({'menssagem': 'Convite aceito com sucesso.'},
 							  status=status.HTTP_201_CREATED)
