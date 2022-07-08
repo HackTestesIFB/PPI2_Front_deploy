@@ -1,5 +1,5 @@
 from rest_framework import serializers, exceptions, status
-from .models import Perfil
+from .models import Perfil, Convite
 from rest_framework.authtoken.models import Token
 
 from django.contrib.auth.models import User
@@ -10,7 +10,7 @@ class ContatoSerializer(serializers.ModelSerializer):
         fields = ('id', 'nome', 'email')
 
 class PerfilSerializer(serializers.ModelSerializer):
-    senha = serializers.CharField(write_only=True, require=True, style={'input_type': 'password'})
+    senha = serializers.CharField(write_only=True, required=True, style={'input_type': 'password'})
     email = serializers.EmailField()
     contatos = ContatoSerializer(required=False, many=True)
 
@@ -41,8 +41,8 @@ class PerfilSimplificadoSerializer(serializers.ModelSerializer):
     pode_convidar = serializers.SerializerMethodField()
 
     class Meta:
-        model = perfil
-        field = ('id', 'nome', 'email', 'pode_convidar')
+        model = Perfil
+        fields = ('id', 'nome', 'email', 'pode_convidar')
         reaad_only_fields = ('id',)
 
     def get_pode_convidar(self, obj):
@@ -51,6 +51,12 @@ class PerfilSimplificadoSerializer(serializers.ModelSerializer):
         perfil = obj
         perfil_logado = user.perfil
 
-        if perfil not in contatos and perfil 1+ perfil_logado:
+        if perfil not in contatos and perfil != perfil_logado:
             return True
         return False
+
+class ConviteSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Convite
+        fields = ('id', 'convidado', 'solicitante')
+        read_only_fields = ('id',)
