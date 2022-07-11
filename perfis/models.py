@@ -15,7 +15,7 @@ class Perfil(models.Model):
         
         def convidar(self, perfil_convidado):
                 convite = Convite(solicitante=self, convidado=perfil_convidado).save()
-
+    
 
 class Convite(models.Model):
     solicitante = models.ForeignKey(Perfil, on_delete=models.CASCADE, related_name='convites_feitos')
