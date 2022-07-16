@@ -1,6 +1,34 @@
-import React from "react";
-import styles from "./Login.css";
+import React, { useState } from "react";
+import "./Login.css";
 
 export default function Login() {
-  return <div className={styles.form}></div>;
+  const  [username, setUsername] = useState();
+  const  [password, setPassword ] = useState();
+
+  function submit(e){
+    e.preventDefault();
+    console.log(username, password);
+
+  }
+
+  return ( 
+    <div className="form">
+      <form>
+        <label>
+          Username
+          <input type="text" onChange={(e)=>
+            setUsername(e.target.value)} />
+        </label>
+
+        <label>
+          Password
+          <input type="password"  onChange={(e)=>
+          setPassword(e.target.value)}/>
+        </label>
+
+        <button type="submit" onClick={submit}>Login</button>
+          
+      </form>
+    </div>
+  )
 }
