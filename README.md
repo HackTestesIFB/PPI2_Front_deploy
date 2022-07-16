@@ -1,67 +1,70 @@
-# projeto-final-2022-1-g1-cc
+# Getting Started with Create React App
 
-## Projeto - PPI2
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-1. [Sobre o Projeto](#sobre-o-projeto)
-    * [Dependências](#Dependências)
-    * [Como executar aplicação na sua máquina](#Como_executar_aplicação_na_sua_máquina)
-    * [Como fazer  o deploy da aplicação](#Como_fazer_o_deploy_da_aplicação)
-    * [Colaboradora](#Colaboradora)
-    * [Link da Aplicação](#link)
+## Available Scripts
 
-## :rocket: Sobre o Projeto
+In the project directory, you can run:
 
-Repositório criado para a disciplina de programação para internet 2.
+### `yarn start`
 
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### :hammer_and_wrench: Dependências 
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-- Python 3
-- Pip
-- Django 2.2
-- Html
-- CSS
-- Bootstrap
+### `yarn test`
 
-### :wrench: Como executar aplicação na sua máquina 
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Com as dependências instaladas corretamente na máquina, execute os comandos a seguir:
+### `yarn build`
 
-1º No terminal da pasta que usará para guardar os arquivos digite:
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-```
-git clone https://github.com/camilacarvalhon/experienceinPPI2.git
-```
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-2º Pelo terminal acesse a pasta da aplicação usando o comando cd
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-```
-cd experienceinPPI2
-```
-3º Digite o comando abaixo para gerar o banco
+### `yarn eject`
 
-```
- python manage.py migrate
-```
-4º Para rodar a aplicação digite:
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-```
- python manage.py runserver
-```
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-### :hammer: Como fazer o deploy da aplicação
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-Acesse a documentação para realizar o deploy
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-[Documentação](https://github.com/camilacarvalhon/experienceinPPI2/blob/main/documentos/Documento%20de%20implanta%C3%A7%C3%A3o-%20PPI2.pdf)
+## Learn More
 
-### :woman_student: :man_student:  Colaboradora
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-- Caio Gomes Flausino
-- Camila Nascimento de Carvalho
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-### :link: Link
+### Code Splitting
 
-Link da aplicação: 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-http://camilacarvalhon.pythonanywhere.com/
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `yarn build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
