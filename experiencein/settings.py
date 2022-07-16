@@ -26,7 +26,7 @@ SECRET_KEY = '++#+2$17f3nxe+er1mb^&u4y_@mzv3k9x0=11zjpc9mnnyci9*'
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost']
-CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_ALLOW_ALL = True
 CORS_ORIGIN_WHITELIST = (
     'htpp://localhost:3000',
 )
