@@ -32,7 +32,7 @@
   font-size: 1rem;
 }
 
-.profiles .invite .icon {
+ .profiles .invite .icon {
   appearance: none;
   border: none;
   width: 1.5rem;
@@ -42,6 +42,15 @@
   cursor: pointer;
   transition: box-shadow 250ms ease-out;
 }
+
+.profiles .invite .message {
+    display: block;
+    color: lightseagreen;
+    width: 100%;
+    text-align: left;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
 
 .profiles .invite .icon:focus {
   outline: none;
