@@ -18,22 +18,26 @@ export default function Profiles() {
 
     api
     .get('/perfis/')
-    .then((resp) => setProfiles(resp.data))
-    .catch((error) => console.error(error));
+    .then((resp) => {
+        setProfiles(resp.data)
 
-    api.get('/convites/')
-    .then(resp => {
-        const invitesInfo = resp.data.map((invite) => {
-            const profile = profiles?.find((profile) => invite.solicitante === profile.id);
+        const tempProfiles = resp.data;
+    
+        api.get('/convites/')
+        .then(resp => {
+            const invitesInfo = resp.data.map((invite) => {
+                const profile = tempProfiles?.find((profile) => invite.solicitante === profile.id);
 
-            return { ...profile, inviteId: invite.id };
-        });
+                return { ...profile, inviteId: invite.id };
+            });
 
-        setInvites(invitesInfo);
+            setInvites(invitesInfo);
+        })
+        .catch((error) => console.error(error));
     })
     .catch((error) => console.error(error));
 
-  }, [profiles]);
+  }, []);
 
   function invite(id){
     api.post(`/convites/convidar/${id}`)
