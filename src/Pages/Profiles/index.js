@@ -15,6 +15,7 @@ export default function Profiles() {
   const [message, setMessage] = useState();
   const [currentInvitedProfile, setCurrentInvitedProfile] = useState();
   const [invites, setInvites] = useState();
+  const [inviteAccept, setInviteAccept] = useState(false);
   //const [contacts, setContacts] = useState();
 
   useEffect(() => {
@@ -43,7 +44,7 @@ export default function Profiles() {
     })
     .catch((error) => console.error(error));
 
-  }, []);
+  }, [inviteAccept]);
 
   function invite(id){
     api.post(`/convites/convidar/${id}`)
@@ -56,9 +57,11 @@ export default function Profiles() {
   function accept(id) {
     api
       .post(`/convites/aceitar/${id}`)
-      .then((resp) => console.log(resp))
+      .then((resp) => {
+        console.log(resp);
+        setInviteAccept(!inviteAccept);
+    })
       .catch((error) => console.error(error));
-      
   }
 
   const history = useHistory();
