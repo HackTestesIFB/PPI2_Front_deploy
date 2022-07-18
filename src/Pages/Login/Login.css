@@ -82,18 +82,18 @@ img{
   outline: none;
 }
 
-._1rf5 {
+._linha{
   margin-left: 8px;
   margin-right: 8px;
   width: auto;
   color:black;
 }
 
-._1rf5>span {
+._linha>span {
   display: inline-block;
   position: relative;
 }
-._1rf5{
+._linha{
   display: block;
   margin-bottom: 10px;
   /* margin-left: 10.5%;
@@ -105,18 +105,18 @@ img{
   width: 95%;
 }
 
-._1rf5>span:before {
+._linha>span:before {
   margin-right: 15px;
   right: 100%;
 }
-._9ax- ._1rf5>span:before, ._9ax- ._1rf5>span:after {
+._linha>span:before, ._linha>span:after {
   background: #d7dade;
 }
-._1rf5>span:after {
+._linha>span:after {
   left: 100%;
   margin-left: 19px;
 }
-._1rf5>span:before, ._1rf5>span:after {
+._linha>span:before, ._linha>span:after {
   background: #ccd0d5;
   content: '';
   height: 1px;

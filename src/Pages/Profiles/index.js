@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import { api } from "../../Services/api";
 import "./Profiles.css";
 import iconChat from "../assets/iconChat.svg";
+import friends from "../assets/friends.svg";
+import notificar from "../assets/notificar.svg";
+import solicitar from "../assets/solicitar.svg";
 import { logout } from '../../Services/utils';
 import { NavLink, useHistory } from 'react-router-dom';
 
@@ -91,7 +94,11 @@ export default function Profiles() {
   
     <div className="profiles">
         <div className="invite">
-            <h1>Solicitar amizade</h1>
+            <div className="friends">
+                <h2>Solicitar amizade</h2>
+                <img src={solicitar}/>
+            </div>
+            
             {profiles?.map((profile) =>  
                 profile.id === currentProfile?.id ? null : (
                     <div key={profile.id}>
@@ -107,7 +114,10 @@ export default function Profiles() {
         </div>
 
         <div className="invitations">
-            <h2>Convites</h2>
+            <div className="friends">
+                <h2>Convites</h2>
+                <img src={notificar}/>
+            </div>
             {invites?.map((item) => (
                 <div className="card-default card" key={item.inviteId}>
                     <h3>{item.nome}</h3>
@@ -117,7 +127,11 @@ export default function Profiles() {
         </div>
 
         <div className="contacts">
-            <h2>Contatos Aceitos</h2>
+            <div className="friends">
+                <h2>Amigos</h2>
+                <img src={friends}/>
+            </div>
+            
             <ul className="contact">
                 {currentProfile?.contatos.map(contact => (
                     <li className="card-default card" key={contact.id}>

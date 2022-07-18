@@ -39,8 +39,8 @@ export default function Login() {
         </label>
 
         <button type="submit" onClick={submit}>Login</button>
-        <div className="_1rf5">
-          <span className="_1rf8">
+        <div className="_linha">
+          <span className="_linhaTeste">
             ou
           </span>
         </div>

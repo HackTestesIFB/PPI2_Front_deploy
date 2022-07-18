@@ -40,8 +40,8 @@ export default function Register() {
                 <div className="titulo">
                     <h3>Cadastrar um nova conta</h3>
                 </div>
-                <div className="_1rf5">
-                    <span className="_1rf8">É rapido!</span>
+                <div className="_linha">
+                    <span className="_linhaTeste">É rapido!</span>
                 </div>
                 <label>
 
