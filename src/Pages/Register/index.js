@@ -68,7 +68,7 @@ export default function Register() {
                 </label>
 
                 <button>Register</button>
-                <div className="_1rf5">
+                <div className="_linha">
                     <span className="_1rf8">
                         ou
                     </span>
