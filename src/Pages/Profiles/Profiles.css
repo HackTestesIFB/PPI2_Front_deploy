@@ -165,6 +165,7 @@ a:-webkit-any-link:hover {
   color: white;
   cursor: pointer;
   transition: box-shadow 250ms ease-out;
+  margin-left: 8rem;
 }
 
 .invitations button:focus {
@@ -178,6 +179,8 @@ a:-webkit-any-link:hover {
 }
 
 .invitations h3 {
+  margin-top: 1rem;
+  margin-bottom: .5rem;
   font-size: 1rem;
   font-weight: 400;
 }
@@ -202,4 +205,8 @@ a:-webkit-any-link:hover {
   font-size: 1rem;
   width: 90%;
 
+}
+.card-default .card button{
+  text-align: center;
+ 
 }
