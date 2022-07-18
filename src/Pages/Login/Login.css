@@ -1,22 +1,43 @@
 
+.login{
+  padding-top: 8rem;
+}
+.titulo{
+ font-style: normal;
+  text-transform: uppercase;
+  color: var(--black);
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+img{
+  position: relative;
+  margin-left:1rem ;
+  margin-bottom: 1.5rem;
+}
 .form {
-  padding-top: 15rem;
-  padding-bottom: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  width: 70%;
-  margin: auto;
+  padding-top: .8rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 
+  width: 25%;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(17, 17, 17, 0.3);
+  box-shadow: 0 0.5rem 1rem rgba(17, 17, 17, 0.3);
 }
 
 .form form {
-  width: 40%;
+  width: 20%;
   margin: auto;
 }
 
 .form input {
   display: block;
-  height: 2.5rem;
+  height: 3rem;
   width: 100%;
   margin-top: 0.5rem;
   border: 1.5px solid lightgray;
@@ -28,10 +49,11 @@
 }
 
 .form label {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   display: block;
   font-weight: bold;
-  text-align: left;
+  
+  
 }
 
 .form input:focus {
@@ -44,17 +66,62 @@
   appearance: none;
   border: none;
   width: 100%;
-  margin-top: 2rem;
-  height: 2.5rem;
+  margin-top: 1rem;
+  height: 2.8rem;
   border-radius: 5px;
-  background-color: lightseagreen;
+  background-color:var(--main-color);
   font-weight: 500;
   color: white;
   cursor: pointer;
   transition: box-shadow 250ms ease-out;
 }
-
+.form button:hover{
+  background-color:darkorchid;
+}
 .form button:focus {
   outline: none;
-  box-shadow: 0 0 0 2px teal;
 }
+
+._1rf5 {
+  margin-left: 8px;
+  margin-right: 8px;
+  width: auto;
+  color:black;
+}
+
+._1rf5>span {
+  display: inline-block;
+  position: relative;
+}
+._1rf5{
+  display: block;
+  margin-bottom: 10px;
+  /* margin-left: 10.5%;
+  margin-right: 10.5%; */
+  margin-top: 10px;
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+  width: 95%;
+}
+
+._1rf5>span:before {
+  margin-right: 15px;
+  right: 100%;
+}
+._9ax- ._1rf5>span:before, ._9ax- ._1rf5>span:after {
+  background: #d7dade;
+}
+._1rf5>span:after {
+  left: 100%;
+  margin-left: 19px;
+}
+._1rf5>span:before, ._1rf5>span:after {
+  background: #ccd0d5;
+  content: '';
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  width: 9999px;
+}
+

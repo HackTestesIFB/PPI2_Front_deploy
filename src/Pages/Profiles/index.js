@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { api } from "../../Services/api";
 import "./Profiles.css";
+import iconChat from "../assets/iconChat.svg";
+import { logout } from '../../Services/utils';
+import { NavLink, useHistory } from 'react-router-dom';
 
 export default function Profiles() {
 
@@ -55,18 +58,47 @@ export default function Profiles() {
       
   }
 
+  const history = useHistory();
+  
+  function handleLogout() {
+    logout();
+    history.push("/");
+  }
+
+
   return (
   <>
-    <h1>Olá {currentProfile?.nome} </h1>
+  <nav className="navBar">
+        <div className="tituloProfile">
+            <h1>Simple Chat</h1>
+            <img src={iconChat}/>
+        </div>
+        <ul className="navLi">
+        <h4>{currentProfile?.nome} </h4>
+            <li>
+                <NavLink exact to="/">
+                    Login   
+                </NavLink>
+            </li>
+            <li>
+                <NavLink exact to="/register">
+                    Register
+                </NavLink>
+            </li>            
+        </ul>
+        <button className="btnProfile"  onClick={handleLogout}>Sign out</button>
+  </nav>
+  
     <div className="profiles">
         <div className="invite">
+            <h1>Solicitar amizade</h1>
             {profiles?.map((profile) =>  
                 profile.id === currentProfile?.id ? null : (
                     <div key={profile.id}>
                         <div className="card">
                             <h3>{profile.nome}</h3>
-                            <span>{profile.email}</span>
-                            {profile.pode_convidar ? <button className="icon" title="convidar" onClick={() => invite(profile.id)}></button> : null}
+                            <span>{profile.email}</span><br/>
+                            {profile.pode_convidar ? <button className="icon" title="convidar"  onClick={() => invite(profile.id)}> Convidar</button> : null}
                         </div>
                         {profile.id === currentInvitedProfile ? <span className="message">{message}</span> : null}
                     </div>
@@ -85,7 +117,7 @@ export default function Profiles() {
         </div>
 
         <div className="contacts">
-            <h2>contatos</h2>
+            <h2>Contatos Aceitos</h2>
             <ul className="contact">
                 {currentProfile?.contatos.map(contact => (
                     <li className="card-default card" key={contact.id}>

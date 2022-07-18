@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
 import { api } from "../../Services/api";
+import "./Register.css";
+import iconChat from "../assets/iconChat.svg"
 
 export default function Register() {
 
@@ -19,43 +21,68 @@ export default function Register() {
             senha: password,
             nome_empresa: companyName
         })
-        .then(resp => {
-            console.log(resp);
-            history.push('/');
-        })
-        .catch(error => console.log(error));
+            .then(resp => {
+                console.log(resp);
+                history.push('/');
+            })
+            .catch(error => console.log(error));
     }
 
-  return (
-    <div className='form'>
-        <form onSubmit={submit}>
-            <label>
-                Name
-                <input type='text' onChange={(e) => setName(e.target.value)} />
-            </label>
+    return (
+        <div className="register">
+        <div className="titulo">
+            <h1>Simple Chat</h1>
+            <img src={iconChat}/>
+        </div>
 
-            <label>
-                Email
-                <input type='text' onChange={(e) => setEmail(e.target.value)} />
-            </label>
 
-            <label>
-                Company Name
-                <input type='text' onChange={(e) => setCompanyName(e.target.value)} />
-            </label>
+            <form onSubmit={submit} className='form'>
+                <div className="titulo">
+                    <h3>Cadastrar um nova conta</h3>
+                </div>
+                <div className="_1rf5">
+                    <span className="_1rf8">É rapido!</span>
+                </div>
+                <label>
 
-            {/* <label>
+                    <input type='text' placeholder="Name" onChange={(e) => setName(e.target.value)} />
+                </label>
+
+                <label>
+
+                    <input type='text' placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
+                </label>
+
+                <label>
+                    <input type='text' placeholder="Company Name" onChange={(e) => setCompanyName(e.target.value)} />
+                </label>
+
+                {/* <label>
                 Phone
                 <input type='text' onChange={(e) => setPhone(e.target.value)} />
             </label> */}
 
-            <label>
-                Password
-                <input type='password' onChange={(e) => setPassword(e.target.value)} />
-            </label>
+                <label>
 
-            <button>Register</button>
-        </form>
-    </div>
-  );
+                    <input type='password' placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
+                </label>
+
+                <button>Register</button>
+                <div className="_1rf5">
+                    <span className="_1rf8">
+                        ou
+                    </span>
+                </div>
+
+                <ul>
+                    <li>
+                        <NavLink exact to="/">
+                            Já tenho uma conta?
+                        </NavLink>
+                    </li>
+                </ul>
+            </form>
+
+        </div>
+    );
 }

@@ -14,27 +14,6 @@ function App() {
 
   return (
     <div className='App'>
-        <header>
-            <nav>
-                <ul>
-                    <li>
-                        <NavLink exact to="/">
-                            Login
-                        </NavLink>
-                    </li>
-
-                    <li>
-                        <NavLink exact to="/register">
-                            Register
-                        </NavLink>
-                    </li>
-
-                    <li>
-                        <button onClick={handleLogout}>Logout</button>
-                    </li>
-                </ul>
-            </nav>
-        </header>
       <Routes />
     </div>
   );
