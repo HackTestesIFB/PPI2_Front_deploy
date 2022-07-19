@@ -26,7 +26,7 @@ else:
     SECRET_KEY = '++#+2$17f3nxe+er1mb^&u4y_@mzv3k9x0=11zjpc9mnnyci9*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 CORS_ORIGIN_ALLOW_ALL = True
