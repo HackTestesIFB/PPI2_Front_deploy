@@ -2,7 +2,7 @@ import axios from 'axios';
 import { getToken } from './utils';
 
 export const api = axios.create({
-  baseURL: 'http://localhost:8000',
+  baseURL: 'https://experiencein-back.herokuapp.com/:443',
 });
 
 api.interceptors.request.use(function (config) {
