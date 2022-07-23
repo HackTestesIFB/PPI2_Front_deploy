@@ -26,9 +26,9 @@ Repositório criado para a disciplina de programação para internet 2.
 - React 17.0.1
 - Axios versão 0.21.1
 
-### :wrench: Como executar aplicação na sua máquina 
+### :wrench: Como executar aplicação na sua máquina no front-end
 
-Com as dependências instaladas corretamente na máquina, execute os comandos a seguir:
+Execute os comandos a seguir:
 
 1º No terminal da pasta que usará para guardar os arquivos digite:
 
@@ -58,7 +58,7 @@ cd projeto-final-2022-1-g1-cc
 ```
  npm start
 ```
-
+6º Connseguir acessar a aplicação pelo front-end, siga os passos do back-end
 ### :hammer: Como fazer o deploy da aplicação
 
 Acesse a documentação para realizar o deploy
