@@ -75,3 +75,14 @@ Acesse a documentação para realizar o deploy
 Link da aplicação: 
 
 https://experiencein-front.herokuapp.com/
+
+### Telas da aplicação
+
+#### Login
+![Login](./ui_figures/login.png)
+
+### Registro
+![Login](./ui_figures/register.png)
+
+### Página principal
+![Login](./ui_figures/main_page.png)
