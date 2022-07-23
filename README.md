@@ -53,7 +53,7 @@ cd experienceinPPI2
 
 Acesse a documentação para realizar o deploy
 
-[Documentação](https://github.com/camilacarvalhon/experienceinPPI2/blob/main/documentos/Documento%20de%20implanta%C3%A7%C3%A3o-%20PPI2.pdf)
+[Documentação](https://github.com/Prof-Fabio-Henrique/projeto-final-2022-1-g1-cc/blob/api/documentos/Documento%20de%20implanta%C3%A7%C3%A3o%20Simple%20Chat%20-%20PPI2.pdf)
 
 ### :woman_student: :man_student:  Colaboradora
 
