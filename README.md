@@ -27,9 +27,9 @@ Repositório criado para a disciplina de programação para internet 2.
 - Axios versão 0.21.1
 
 
-### :wrench: Como executar aplicação na sua máquina 
+### :wrench: Como executar aplicação na sua máquina no back-end
 
-Com as dependências instaladas corretamente na máquina, execute os comandos a seguir:
+Execute os comandos a seguir:
 
 1º No terminal da pasta que usará para guardar os arquivos digite:
 
@@ -72,6 +72,7 @@ python manage.py migrate
 ```
  python manage.py runserver
 ```
+8º Para testar a aplicação siga os passos descritos para o front-end
 
 ### :hammer: Como fazer o deploy da aplicação
 
