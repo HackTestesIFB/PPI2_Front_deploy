@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+## projeto-final-2022-1-g1-cc
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. [Sobre o Projeto](#sobre-o-projeto)
+    * [Dependências](#Dependências)
+    * [Como executar aplicação na sua máquina](#Como_executar_aplicação_na_sua_máquina)
+    * [Como fazer  o deploy da aplicação](#Como_fazer_o_deploy_da_aplicação)
+    * [Colaboradora](#Colaboradora)
+    * [Link da Aplicação](#link)
 
-## Available Scripts
+## :rocket: Sobre o Projeto
 
-In the project directory, you can run:
+Repositório criado para a disciplina de programação para internet 2.
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### :hammer_and_wrench: Dependências back-end
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Python versão 3.7
+- Django versão 2.2
+- Pip
+- Django-cors-headers versão 3.7.0
+- Djangorestframework versão 3.13.1
+- Gunicorn versão 20.1.0
 
-### `yarn test`
+### :hammer_and_wrench: Dependências front-end
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React 17.0.1
+- Axios versão 0.21.1
 
-### `yarn build`
+### :wrench: Como executar aplicação na sua máquina 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Com as dependências instaladas corretamente na máquina, execute os comandos a seguir:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1º No terminal da pasta que usará para guardar os arquivos digite:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+git clone https://github.com/Prof-Fabio-Henrique/projeto-final-2022-1-g1-cc.git
+```
 
-### `yarn eject`
+2º Pelo terminal acesse a pasta da aplicação usando o comando cd
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+cd projeto-final-2022-1-g1-cc
+```
+3º Digite o comando abaixo para mudar para branch front-end
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+ git checkout -b front-end
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+3º Digite o comando abaixo para instalar as dependências
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+ npm install 
+``` 
 
-## Learn More
+5º Para rodar a aplicação digite:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+ npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### :hammer: Como fazer o deploy da aplicação
 
-### Code Splitting
+Acesse a documentação para realizar o deploy
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+[Documentação](https://github.com/Prof-Fabio-Henrique/projeto-final-2022-1-g1-cc/blob/api/documentos/Documento%20de%20implanta%C3%A7%C3%A3o%20Simple%20Chat%20-%20PPI2.pdf)
 
-### Analyzing the Bundle Size
+### :woman_student: :man_student:  Colaboradores
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Caio Gomes Flausino
+- Camila Nascimento de Carvalho
 
-### Making a Progressive Web App
+### :link: Link
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Link da aplicação: 
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://experiencein-front.herokuapp.com/
