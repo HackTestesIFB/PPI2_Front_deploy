@@ -47,7 +47,7 @@ cd projeto-final-2022-1-g1-cc
  git checkout -b front-end
 ```
 
-3º Digite o comando abaixo para instalar as dependências
+4º Digite o comando abaixo para instalar as dependências
 
 ```
  npm install 
