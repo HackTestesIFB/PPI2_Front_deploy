@@ -64,4 +64,4 @@ Acesse a documentação para realizar o deploy
 
 Link da aplicação: 
 
-http://camilacarvalhon.pythonanywhere.com/
+https://experiencein-front.herokuapp.com/
