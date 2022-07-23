@@ -45,7 +45,7 @@ cd projeto-final-2022-1-g1-cc
 3º Digite o comando abaixo para mudar para a branch da api
 
 ```
- git checkout -b back-end
+ git checkout -b api
 ```
 
 4º Direcione-se até o arquivo settings.py e coloque debug como True
