@@ -29,12 +29,12 @@ export default function Login() {
       </div>
       <form className="form">
         <label>
-          <input type="text" placeholder="Username" onChange={(e) =>
+          <input type="text" placeholder="Nome de usuário" onChange={(e) =>
             setUsername(e.target.value)} />
         </label>
 
         <label>
-          <input type="password" placeholder="Password" onChange={(e) =>
+          <input type="password" placeholder="Senha" onChange={(e) =>
             setPassword(e.target.value)} />
         </label>
 
@@ -47,7 +47,7 @@ export default function Login() {
         <ul>
           <li>
             <NavLink exact to="/register">
-              Register
+              Registrar
             </NavLink>
           </li>
         </ul>

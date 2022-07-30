@@ -83,16 +83,16 @@ export default function Profiles() {
         <h4>{currentProfile?.nome} </h4>
             <li>
                 <NavLink exact to="/">
-                    Login   
+                    Login
                 </NavLink>
             </li>
             <li>
                 <NavLink exact to="/register">
-                    Register
+                    Registrar
                 </NavLink>
             </li>            
         </ul>
-        <button className="btnProfile"  onClick={handleLogout}>Sign out</button>
+        <button className="btnProfile"  onClick={handleLogout}>Logout</button>
   </nav>
   
     <div className="profiles">

@@ -45,7 +45,7 @@ export default function Register() {
                 </div>
                 <label>
 
-                    <input type='text' placeholder="Name" onChange={(e) => setName(e.target.value)} />
+                    <input type='text' placeholder="Nome" onChange={(e) => setName(e.target.value)} />
                 </label>
 
                 <label>
@@ -54,7 +54,7 @@ export default function Register() {
                 </label>
 
                 <label>
-                    <input type='text' placeholder="Company Name" onChange={(e) => setCompanyName(e.target.value)} />
+                    <input type='text' placeholder="Nome da companhia" onChange={(e) => setCompanyName(e.target.value)} />
                 </label>
 
                 {/* <label>
@@ -64,10 +64,10 @@ export default function Register() {
 
                 <label>
 
-                    <input type='password' placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
+                    <input type='password' placeholder="Senha" onChange={(e) => setPassword(e.target.value)} />
                 </label>
 
-                <button>Register</button>
+                <button>Registrar</button>
                 <div className="_linha">
                     <span className="_1rf8">
                         ou
