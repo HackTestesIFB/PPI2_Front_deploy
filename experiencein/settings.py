@@ -19,11 +19,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
+
 # SECURITY WARNING: keep the secret key used in production secret!
-if os.environ['ADMIN_PASSWORD'] is not None:
+try:
     SECRET_KEY = os.environ['ADMIN_PASSWORD']
-else:
-    SECRET_KEY = '++#+2$17f3nxe+er1mb^&u4y_@mzv3k9x0=11zjpc9mnnyci9*'
+except:
+    print('No ADMIN_PASSWORD defined!')
+    quit(0)
+    #SECRET_KEY = '++#+2$17f3nxe+er1mb^&u4y_@mzv3k9x0=11zjpc9mnnyci9*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
