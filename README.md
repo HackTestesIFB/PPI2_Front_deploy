@@ -90,3 +90,7 @@ Acesse a documentação para realizar o deploy
 Link da aplicação: 
 
 https://experiencein-front.herokuapp.com/
+
+Link da apresentação:
+
+[Apresentação](https://drive.google.com/file/d/1BNH_4BuKfslsVj5_CnUbkXETAX8PMtKj/view)
