@@ -76,9 +76,11 @@ Link da aplicação:
 
 https://experiencein-front.herokuapp.com/
 
-Link da apresentação:
+Links da apresentação:
 
-[Apresentação](https://drive.google.com/file/d/1BNH_4BuKfslsVj5_CnUbkXETAX8PMtKj/view)
+[Apresentação no Drive](https://drive.google.com/file/d/1BNH_4BuKfslsVj5_CnUbkXETAX8PMtKj/view)
+
+[Apresentação no YouTube](https://www.youtube.com/watch?v=AswzoKb3_dQ)
 
 ### Telas da aplicação
 
